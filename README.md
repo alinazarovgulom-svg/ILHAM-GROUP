@@ -38,7 +38,7 @@ va `http://localhost:8000` manziliga o'ting.
 Sayt hozircha namunaviy matn va raqamlar bilan to'ldirilgan. Ishga tushirishdan oldin quyidagilarni real ma'lumotlar bilan almashtiring:
 
 - ✅ Telefon: `+998 91 716 55 55`, Email: `ilhamgroup1963@gmail.com`, Telegram: `@ilham_group_1963` — barcha sahifalarda yangilangan
-- Manzil: `contact.html` sahifasidagi manzil va Google Xarita (hali namunaviy — aniq manzil kiritilishi kerak)
+- ✅ Manzil: Namangan shahri, 2-G'irvonsoy ko'chasi, 20-uy — barcha tillarda va xaritada yangilangan
 - Statistika raqamlari (`index.html` dagi "Yillik tajriba", "Fabrika xodimlari" va h.k.)
 - Ijtimoiy tarmoq havolalari (Instagram, Telegram, Facebook — footer'da)
 - Hozirgi naqshli fon rasmlar o'rniga haqiqiy fabrika/mahsulot suratlarini qo'yish tavsiya etiladi
