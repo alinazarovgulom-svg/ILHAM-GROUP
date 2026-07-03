@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://alinazarovgulom-svg.github.io/sitemap.xml
+Sitemap: https://ilham-group-1963.web.app/sitemap.xml

@@ -31,7 +31,7 @@ va `http://localhost:8000` manziliga o'ting.
 2. **Source** bo'limida `Deploy from a branch` ni tanlang
 3. **Branch**: `main`, papka: `/ (root)` tanlang va **Save** bosing
 4. Bir necha daqiqadan so'ng sayt shu manzilda ochiladi:
-   `https://alinazarovgulom-svg.github.io/`
+   `https://ilham-group-1963.web.app/`
 
 ## Almashtirish kerak bo'lgan joy-tutuvchi (placeholder) ma'lumotlar
 
