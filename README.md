@@ -4,12 +4,16 @@ ILHAM GROUP — O'zbekistonda kostyum va shim ishlab chiqaruvchi fabrika uchun r
 
 Sayt static HTML/CSS/JS bilan qurilgan va GitHub Pages orqali bepul hosting qilinadi.
 
-## Sahifalar
+## Sahifalar va tillar
 
-- `index.html` — Bosh sahifa
-- `collections.html` — Kolleksiyalar
-- `about.html` — Biz haqimizda
-- `contact.html` — Aloqa
+Sayt 3 tilda mavjud: o'zbekcha (asosiy, ildiz papkada), ruscha (`ru/`) va inglizcha (`en/`). Har bir sahifada yuqori o'ng burchakda til almashtirgich (UZ / RU / EN) bor.
+
+- `index.html`, `ru/index.html`, `en/index.html` — Bosh sahifa
+- `collections.html`, `ru/collections.html`, `en/collections.html` — Kolleksiyalar
+- `about.html`, `ru/about.html`, `en/about.html` — Biz haqimizda
+- `contact.html`, `ru/contact.html`, `en/contact.html` — Aloqa
+
+Har bir sahifada `hreflang` teglari orqali Google'ga uning boshqa til versiyalari ko'rsatilgan — bu tilga mos qidiruv natijalarida to'g'ri versiya chiqishiga yordam beradi.
 
 ## Saytni ishga tushirish (lokal)
 
