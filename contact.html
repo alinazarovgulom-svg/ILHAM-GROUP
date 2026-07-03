@@ -94,6 +94,9 @@
 
       <div class="reveal">
         <form id="contact-form">
+          <input type="hidden" name="access_key" value="416812db-4f57-4637-a487-c9f2690b84f2">
+          <input type="hidden" name="subject" value="ILHAM GROUP sayti — yangi xabar">
+          <input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off">
           <div class="form-group">
             <label for="name">Ism familiya</label>
             <input type="text" id="name" name="name" required>
@@ -111,7 +114,10 @@
             <textarea id="message" name="message" rows="5" required></textarea>
           </div>
           <button type="submit" class="btn btn-gold">Yuborish</button>
-          <p class="form-note" id="form-status"></p>
+          <p class="form-note" id="form-status"
+            data-sending="Yuborilmoqda..."
+            data-success="Rahmat! Xabaringiz qabul qilindi. Tez orada siz bilan bog'lanamiz."
+            data-error="Xatolik yuz berdi. Iltimos, keyinroq qayta urinib ko'ring yoki to'g'ridan-to'g'ri qo'ng'iroq qiling."></p>
         </form>
       </div>
     </div>

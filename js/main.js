@@ -87,15 +87,33 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  // Contact form (static — no backend yet)
+  // Contact form — submits via Web3Forms (no backend needed)
   const form = document.querySelector("#contact-form");
-  form?.addEventListener("submit", (e) => {
+  const note = document.querySelector("#form-status");
+  const sendingMsg = note?.dataset.sending || "Sending...";
+  const successMsg = note?.dataset.success || "Thank you! Your message has been received.";
+  const errorMsg = note?.dataset.error || "Something went wrong. Please try again later.";
+
+  form?.addEventListener("submit", async (e) => {
     e.preventDefault();
-    const note = document.querySelector("#form-status");
-    if (note) {
-      note.textContent = "Rahmat! Xabaringiz qabul qilindi. Tez orada siz bilan bog'lanamiz.";
+    const submitBtn = form.querySelector("button[type=submit]");
+    if (note) note.textContent = sendingMsg;
+    if (submitBtn) submitBtn.disabled = true;
+
+    try {
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: { "Content-Type": "application/json", Accept: "application/json" },
+        body: JSON.stringify(Object.fromEntries(new FormData(form))),
+      });
+      const result = await response.json();
+      if (note) note.textContent = result.success ? successMsg : errorMsg;
+      if (result.success) form.reset();
+    } catch (err) {
+      if (note) note.textContent = errorMsg;
+    } finally {
+      if (submitBtn) submitBtn.disabled = false;
     }
-    form.reset();
   });
 
   // Footer year
