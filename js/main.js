@@ -5,14 +5,22 @@ document.addEventListener("DOMContentLoaded", () => {
   const toggle = document.querySelector(".nav-toggle");
   const mobileNav = document.querySelector(".mobile-nav");
 
+  const progressBar = document.querySelector(".scroll-progress");
+
   const onScroll = () => {
     if (window.scrollY > 40) {
       header?.classList.add("is-scrolled");
     } else if (!header?.classList.contains("solid")) {
       header?.classList.remove("is-scrolled");
     }
+
+    if (progressBar) {
+      const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+      const pct = docHeight > 0 ? (window.scrollY / docHeight) * 100 : 0;
+      progressBar.style.width = pct + "%";
+    }
   };
-  window.addEventListener("scroll", onScroll);
+  window.addEventListener("scroll", onScroll, { passive: true });
   onScroll();
 
   toggle?.addEventListener("click", () => {
