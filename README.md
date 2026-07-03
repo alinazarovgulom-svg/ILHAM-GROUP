@@ -2,7 +2,7 @@
 
 ILHAM GROUP — O'zbekistonda kostyum va shim ishlab chiqaruvchi fabrika uchun rasmiy brend sayti.
 
-Sayt static HTML/CSS/JS bilan qurilgan va GitHub Pages orqali bepul hosting qilinadi.
+Sayt static HTML/CSS/JS bilan qurilgan va Firebase Hosting orqali bepul joylashtirilgan: **https://ilham-group-1963.web.app/**
 
 ## Sahifalar va tillar
 
@@ -25,13 +25,14 @@ python3 -m http.server 8000
 
 va `http://localhost:8000` manziliga o'ting.
 
-## GitHub Pages orqali bepul joylashtirish
+## Firebase Hosting orqali qayta joylashtirish (yangilanishlardan keyin)
 
-1. GitHub'da repo sahifasiga o'ting: **Settings → Pages**
-2. **Source** bo'limida `Deploy from a branch` ni tanlang
-3. **Branch**: `main`, papka: `/ (root)` tanlang va **Save** bosing
-4. Bir necha daqiqadan so'ng sayt shu manzilda ochiladi:
-   `https://ilham-group-1963.web.app/`
+```
+git pull
+npx firebase-tools deploy --only hosting
+```
+
+Loyiha ID (`ilham-group-1963`) `.firebaserc` faylida saqlangan, qayta so'ralmaydi.
 
 ## Almashtirish kerak bo'lgan joy-tutuvchi (placeholder) ma'lumotlar
 
@@ -39,9 +40,9 @@ Sayt hozircha namunaviy matn va raqamlar bilan to'ldirilgan. Ishga tushirishdan 
 
 - ✅ Telefon: `+998 91 716 55 55`, Email: `ilhamgroup1963@gmail.com`, Telegram: `@ilham_group_1963` — barcha sahifalarda yangilangan
 - ✅ Manzil: Namangan shahri, 2-G'irvonsoy ko'chasi, 20-uy — barcha tillarda va xaritada yangilangan
+- ✅ Haqiqiy mahsulot va vitrina suratlari (`images/` papkasida) — hero, kolleksiya kartalari va "Biz haqimizda" sahifasida ishlatilgan
 - Statistika raqamlari (`index.html` dagi "Yillik tajriba", "Fabrika xodimlari" va h.k.)
 - Ijtimoiy tarmoq havolalari (Instagram, Telegram, Facebook — footer'da)
-- Hozirgi naqshli fon rasmlar o'rniga haqiqiy fabrika/mahsulot suratlarini qo'yish tavsiya etiladi
 
 ## SEO
 
