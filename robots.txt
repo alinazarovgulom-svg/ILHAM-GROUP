@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://alinazarovgulom-svg.github.io/ilham-group/sitemap.xml
